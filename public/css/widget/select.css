@@ -1,0 +1,98 @@
+/* Select */
+
+.select-widget select {
+    color: rgba(45, 45, 48, 0.3);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.13);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 4px;
+    padding: 9px 20px 11px;
+    -webkit-transition: 100ms linear;
+            transition: 100ms linear;
+}
+
+/* SVG gee-gaws */
+.select-widget .select-arrow-line {
+    position: absolute;
+    top: 0;
+    right: 44px;
+    height: 100%;
+    overflow: hidden;
+}
+.select-widget .select-arrow-line line {
+    stroke: #eaeaea;
+    -webkit-transition: 100ms linear;
+            transition: 100ms linear;
+}
+.select-widget .select-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    margin-top: -10px;
+}
+.select-widget .select-arrow polyline {
+    stroke: #ccc;
+    -webkit-transition: 100ms linear;
+}
+.select-widget .select-arrow-bg {
+    display: none;
+    /*
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 36px;
+    right: 5px;
+    margin-top: -18px;
+    overflow: hidden;
+    */
+}
+
+/* Hover */
+.select-widget:hover select {
+    background-color: #fafafa;
+    color: #2aa5fc !important;
+}
+.select-widget:hover .select-arrow-line line {
+    stroke: #eaeaea;
+}
+.select-widget:hover .select-arrow polyline,
+.select-widget.answered:hover .select-arrow polyline {
+    stroke: #2aa5fc !important;
+}
+
+/* Focus */
+.select-widget.focus select {
+    color: rgba(45, 45, 48, 0.5);
+    background-color: #fafafa !important;
+    border-color: #b8b8b8;
+    border-radius: 16px;
+}
+.select-widget.focus .select-arrow-line line,
+.select-widget.focus .select-arrow polyline {
+    stroke: #b8b8b8;
+}
+
+/* Answered */
+.select-widget.answered select {
+    color: rgba(42, 43, 47, 1.0);
+}
+.select-widget.answered .select-arrow polyline {
+    stroke: #999;
+}
+.select-widget.answered select {
+    background-color: #fff;
+    color: rgba(42, 43, 47, 1.0);
+}
+
+/* Options */
+.select-widget option {
+    text-indent: 2px;
+    color: transparent;
+    text-shadow: 0 0 0 rgba(45, 45, 48, 1.0);
+}
+.select-widget option[disabled] {
+    color: transparent;
+    text-shadow: 0 0 0 rgba(45, 45, 48, 0.3);
+}

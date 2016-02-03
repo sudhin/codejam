@@ -1,0 +1,103 @@
+/*
+
+Colors in use:
+
+Off-white: #f5f5f5
+Dark gray: #2d2d30
+Slate: #405e7c
+Blue: #2aa5fc
+
+Font weights available from Google:
+
+Merriweather Light 300
+Merriweather Normal 400
+Merriweather Bold 700
+Merriweather Ultra-Bold 900
+
+Open Sans Light: 300
+Open Sans Normal: 400
+Open Sans Semi-Bold: 600
+Open Sans Bold: 700
+Open Sans Extra-Bold: 800
+
+*/
+
+/* Reset margins, padding, borders */
+body, h1, h2, h3 {
+    margin: 0;
+}
+fieldset, select, input {
+    margin: 0;
+    padding: 0;
+}
+legend, option {
+    padding: 0;
+}
+fieldset {
+    border: 0;
+}
+
+/* Reset input widgets */
+input, select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0 solid transparent;
+    border-radius: 0;
+    outline: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+option {
+    padding-left: inherit;
+}
+
+/* Reset vendor-specific input widget quirks */
+select,
+select:-moz-focusring {
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+}
+:disabled {
+    opacity: 1.0;
+}
+:invalid {
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+::-ms-expand {
+    display: none;
+}
+::-ms-value {
+    background: transparent;
+    color: inherit;
+}
+::-ms-clear {
+    display: none;
+}
+
+/* Generic defaults */
+legend {
+    width: 100%;
+}
+input, select {
+    box-sizing: border-box;
+    width: 100%;
+}
+input[type="radio"] {
+    width: auto;
+}
+
+/* Fonts, colors */
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f5f5f5;
+    color: #2d2d30;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}

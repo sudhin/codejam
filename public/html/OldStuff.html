@@ -1,0 +1,185 @@
+        <!--
+        <script type="text/html" id="Input">
+            <div class="widget text-widget">
+                <input class="input text-input" id="id-<%=name%>" name="<%=name%>" tabindex="0" placeholder="<%=placeholder%>"<%=attrs%> />
+            </div>
+        </script>
+        <script type="text/html" id="Select">
+            <div class="widget select-widget">
+                <select class="input select-input" id="id-<%=name%>" name="<%=name%>" tabindex="0">
+                        <option disabled selected value=""><%=placeholder%></option>
+                    <% for (var i = 0; i < choices.length; i++) { %>
+                        <option value="<%=choices[i]%>"><%=choices[i]%></option>
+                    <% } %>
+                </select>
+                <svg class="select-arrow-bg" width="1" height="1" pointer-events="none" focusable="false">
+                    <rect width="100%" height="100%" fill="#fff" stroke="#fff"/>
+                </svg>
+                <svg class="select-arrow-line" width="1" height="1" pointer-events="none" focusable="false">
+                    <line x1="0" y="0" x2="0" y2="100%" stroke-width="3" stroke="#333" fill="none"/>
+                </svg>
+                <svg class="select-arrow" width="20" height="20" pointer-events="none" focusable="false">
+                    <polyline points="5,8 10,13 15,8" stroke-width="1.5" stroke="#333" fill="none"/>
+                </svg>
+            </div>
+        </script>
+        <script type="text/html" id="RadioSelect">
+            <div class="widget radioselect-widget">
+            <% for (var i = 0; i < choices.length; i++) { %>
+                <span class="subwidget radio-subwidget">
+                    <input class="input radio-input" id="id-<%=name%>-<%=i%>" name="<%=name%>" type="radio" value="<%=choices[i]%>" tabindex="0"/>
+                    <svg class="radio-circle" width="20" height="20" pointer-events="none" focusable="false">
+                        <circle cx="50%" cy="50%" r="45%" stroke-width="1.2" stroke="#333" fill="none"/>
+                    </svg>
+                    <svg class="radio-circle-fill" width="20" height="20" pointer-events="none" focusable="false">
+                        <circle cx="50%" cy="50%" r="30%" fill="#333"/>
+                    </svg>
+                    <label for="id-<%=name%>-<%=i%>">
+                            <span><%=choices[i]%></span>
+                        <% if (typeof captions != "undefined") { %>
+                            <span class="radio-label-caption"><%=choices[i]%></span>
+                        <% } %>
+                    </label>
+                </span>
+            <% } %>
+            </div>
+        </script>
+        <script type="text/html" id="YesNoSelect">
+            <div class="widget yesnoselect-widget">
+            <% for (var i = 0; i < choices.length; i++) { %>
+                <span class="subwidget yesno-subwidget">
+                    <input class="input yesno-input" id="id-<%=name%>-<%=i%>" name="<%=name%>" type="radio" value="<%=choices[i]%>" tabindex="0"/>
+                    <label for="id-<%=name%>-<%=i%>">
+                        <%=choices[i]%>
+                    </label>
+                </span>
+            <% } %>
+            </div>
+        </script>
+        <script type="text/html" id="Field">
+            <div class="field">
+                <div class="field-label">
+                    <label><%=label%></label>
+                </div>
+                <div class="field-details">
+                <% for (var i = 0; i < (input.length || 1); i++) { %>
+                    <div class="field-input">
+                        <%=input[i] || input%>
+                    </div>
+                <% } %>
+                </div>
+            </div>
+        </script>
+        <script type="text/html" id="Fieldset">
+            <fieldset class="fieldset">
+                <legend class="fieldset-legend">
+                    <div class="fieldset-label"><%=title%></div>
+                </legend>
+                <div class="fieldset-details">
+                    <% for (var i = 0; i < fields.length; i++) { %>
+                        <%=fields[i]%>
+                    <% } %>
+                </div>
+            </fieldset>
+        </script>
+        <script type="text/html" id="Form">
+            <section class="section" id="section-vehicles">
+                <div class="section-background">
+                    <div class="section-callout"></div>
+                </div>
+                <div class="section-legend">
+                    <h2 class="section-label">Let’s get started.</h2>
+                </div>
+                <div class="section-details">
+                    <div class="subsection">
+                        <div class="subsection-legend">
+                            <div class="subsection-label">Getting Started</div>
+                            <div class="subsection-summary">
+                                <span class="summary-fragment" data-index="0">2</span> cars in <span class="summary-fragment" data-index="3">Adelaide</span>, <span class="summary-fragment" data-index="2">South Australia</span>
+                                <a class="subsection-edit" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="subsection-details">
+                            <%=intro%>
+                        </div>
+                    </div>
+                <% for (var i = 0; i < vehicles.length; i++) { %>
+                    <div class="subsection">
+                        <div class="subsection-legend">
+                            <div class="subsection-label">Vehicle 0<%=i+1%></div>
+                            <div class="subsection-summary">
+                                <span class="summary-fragment" data-index="0">2015</span> <span class="summary-fragment" data-index="1">Holden</span> <span class="summary-fragment" data-index="2">Commodore</span>
+                                <a class="subsection-edit" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="subsection-details">
+                            <%=vehicles[i].cartype%>
+                            <%=vehicles[i].cover%>
+                            <%=vehicles[i].details%>
+                            <% if (i == 0) { %>
+                                <div style="display: none;">
+                                    Add more cars?
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+                <% } %>
+                </div>
+            </section>
+        </script>
+        -->
+                <!--
+            <section id="section-drivers">
+                <h2 class="section-label">Now let&rsquo;s talk about you.</h2>
+                <%=policyholder.about%>
+                <%=policyholder.drivingHistory%>
+                <%=policyholder.insuranceHistory%>
+                <div>
+                    Add more drivers?
+                </div>
+                <% for (var i = 0; i < drivers.length; i++) { %>
+                    <%=drivers[i].about%>
+                    <%=drivers[i].drivingHistory%>
+                    <%=drivers[i].insuranceHistory%>
+                <% } %>
+            </section>
+                <%=sections.vehicles.type%>
+                <%=sections.policy.where%>
+                <%=sections.policy.when%>
+            </section>
+            <section>
+                <h2 class="section-label">Okay, tell us about your&nbsp;car!</h2>
+                <div class="section-summary">
+                    <span class="fieldset-summary">
+                        <a href="#">Comprehensive cover</a>
+                        for
+                    </span>
+                    <span class="fieldset-summary">
+                        a
+                        <a href="#">2015 Holden Commodore</a>,
+                    </span>
+                    <span class="fieldset-summary">
+                        purchased in
+                        <a href="#">2011</a>,
+                    </span>
+                    <span class="fieldset-summary">
+                        and used for
+                        <a href="#">commuting</a>
+                    </span>
+                </div>
+                <div class="section-callout">
+                    <div class="fieldset-label">Label 1</div>
+                    <div class="fieldset-label">Label 2</div>
+                    <div class="fieldset-label">Label 3</div>
+                </div>
+                <%=sections.cars.type%>
+                <%=sections.cars.cover%>
+                <%=sections.cars.ownership%>
+                <%=sections.cars.usage%>
+            </section>
+            <section>
+                <h2 class="section-label">Policyholder and other&nbsp;drivers</h2>
+                <%=sections.drivers.details%>
+                <%=sections.drivers.residency%>
+            </section>
+        -->

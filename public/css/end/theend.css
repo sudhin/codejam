@@ -1,0 +1,109 @@
+.theend-section {
+    position: relative;
+    background: #fff;
+    padding-bottom:200px;
+}
+.theend-section-legend {
+    width: 960px;
+    margin: auto;
+    text-align: left;
+}
+.theend-section-label {
+    padding: 100px 0 40px;
+}
+.theend-section-label h1 {
+    font-family: "Merriweather";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+.theend-section .action-button {
+    color: #2aa5fc;
+    display: block;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    width: 265px;
+    padding: 9px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    height:20px;
+    margin:10px 0px;
+    box-shadow: none;
+    margin-bottom:30px;
+}
+.theend-section .action-button.primary {
+    width:190px;
+    border-color: transparent;
+    background: -webkit-linear-gradient(top, rgba(42,164,252,1) 0%, rgba(38,148,226,1) 100%);
+    color: #fff;
+}
+
+/* Drivers & Vehicles */
+.theend-subsection {
+    width: 960px;
+    margin: 0px auto 0;
+    clear: both;
+    overflow: hidden;
+    padding-bottom:40px;
+}
+.theend-subsection-label {
+    width: 330px;
+    color:#2aa5fc;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 40px;
+    text-align: left;
+    float:left;
+    border-top:1px solid #eaeaea;
+    -webkit-font-smoothing:antialiased;
+    padding-top:30px;
+}
+.theend-subsection-details {
+    width: 570px;
+    float:right;
+    overflow: hidden;
+    border-top: 1px solid #eaeaea;
+    padding-top:30px;
+}
+.theend-fieldset {
+    width: 100%;
+    position: relative;
+}
+.theend-fieldset > p {
+    color:#999999;
+    font-size:14px;
+    -webkit-font-smoothing:antialiased;
+    line-height: 26px;
+    margin-bottom:30px;
+    margin-top:0px;
+    max-width: 490px;
+}
+.theend-field {
+    position:relative;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.theend-field-label {
+    width:35%;
+    float:left;
+}
+.theend-field-label p {
+    opacity:1;
+    font-size:11px;
+    line-height:34px;
+    margin:0px;
+}
+.theend-field-content {
+    width:65%;
+    float:left;
+}
+.theend-field-content p {
+    opacity: 0.4;
+    font-size:14px;
+    line-height:34px;
+    margin:0px;
+}

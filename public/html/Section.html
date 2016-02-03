@@ -1,0 +1,17 @@
+<section class="section" id="<%=id%>">
+    <div class="section-background">
+        <div class="section-callout">
+            <div class="callout-subsection-label"></div>
+            <div class="callout-fieldset-label"></div>
+        </div>
+    </div>
+    <div class="section-legend">
+        <h2 class="section-label"><%=label%></h2>
+    </div>
+    <div class="section-details">
+        <% for (var i = 0; i < subsections.length; i++) { %>
+            <%=subsections[i]%>
+        <% } %>
+    </div>
+</section>
+

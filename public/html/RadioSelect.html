@@ -1,0 +1,19 @@
+<div class="widget radioselect-widget">
+<% for (var i = 0; i < choices.length; i++) { %>
+    <span class="subwidget radio-subwidget<% if (!stacked) { %> onethird<% } %>">
+        <input class="input radio-input" id="id-<%=name%>-<%=i%>" name="<%=name%>" type="radio" value="<%=choices[i]%>" tabindex="0"/>
+        <svg class="radio-circle" width="20" height="20" pointer-events="none" focusable="false">
+            <circle cx="50%" cy="50%" r="45%" stroke-width="1.2" stroke="#333" fill="none"/>
+        </svg>
+        <svg class="radio-circle-fill" width="20" height="20" pointer-events="none" focusable="false">
+            <circle cx="50%" cy="50%" r="25%" fill="#333"/>
+        </svg>
+        <label for="id-<%=name%>-<%=i%>">
+                <span><%=choices[i]%></span>
+            <% if (typeof captions != "undefined") { %>
+                <span class="radio-label-caption"><%=choices[i]%></span>
+            <% } %>
+        </label>
+    </span>
+<% } %>
+</div>

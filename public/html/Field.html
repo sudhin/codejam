@@ -1,0 +1,17 @@
+<div class="field">
+    <div class="field-label">
+        <label><%=label%></label>
+    </div>
+<% if (extra.length) { %>
+    <div class="field-extra">
+      <% for (var i = 0; i < extra.length; i++) { %>
+          <%=extra[i]%>
+      <% } %>
+    </div>
+<% } %>
+    <div class="field-details">
+    <% for (var i = 0; i < (input.length || 1); i++) { %>
+        <%=input[i] || input%>
+    <% } %>
+    </div>
+</div>

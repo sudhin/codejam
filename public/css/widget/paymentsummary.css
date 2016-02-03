@@ -1,0 +1,140 @@
+.paymentsummary-ledgerrow p {
+    opacity: 0.55;
+    font-size:14px;
+}
+.paymentsummary-ledgerrow span {
+    float:right;
+    text-align: right;
+    font-size: 18px;
+}
+.paymentsummary-ledgerrow span.sad {
+    opacity:0.55;
+}
+.paymentsummary-ledgerrow-duetoday {
+    border-top: 1px solid #F3F3F4;
+    margin-top:25px;
+    margin-bottom:30px;
+}
+.paymentsummary-ledgerrow-duetoday p {
+    color:#2aa5fc;
+    font-size:14px;
+    line-height: 20px;
+    margin-top:25px;
+    margin-bottom:0px;
+}
+.paymentsummary-ledgerrow-duetoday span {
+    color:#2aa5fc;
+    float:right;
+    text-align: right;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top:25px;
+    margin-bottom:0px;
+}
+.paymentsummary-ledgerrow-duetoday p.legalese {
+    font-size:13px;
+    font-style: italic;
+    color:#999999;
+    margin-top:5px;
+    margin-bottom: 0px;
+}
+.paymentsummary-ledgerrow-duetoday p.legalese a {
+    color:#2aa5fc;
+    text-decoration:none;
+}
+
+.paymentsummary-subwidget {
+    display: block;
+    position: relative;
+    margin-left: 0px;
+}
+.paymentsummary-subwidget input {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.paymentsummary-subwidget label {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.13);
+    -webkit-transition: 100ms linear;
+    cursor: pointer;
+}
+
+/* Hover */
+.paymentsummary-subwidget:hover label {
+    color: #2aa5fc;
+    background: #fafafa;
+}
+
+/* Focus */
+.paymentsummary-subwidget.focus label {
+    border-radius: 16px;
+    background: #fbfbfb;
+    border-color: #c8c8c8;
+}
+
+/* Checked */
+.paymentsummary-subwidget.checked label {
+    color: #2aa5fc;
+    background: #fff;
+    border-color: #2aa5fc;
+}
+
+/* Answered */
+.yesnoselect-widget.answered label {
+    background: #fff;
+}
+
+.special .paymentsummary-subwidget label {
+    border-none: none;
+    border-radius: 4px;
+    box-shadow: none;
+    color:#ffffff;
+    background-color: #2aa5fc;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2AA5FC), to(#2594E2));
+    background: -webkit-linear-gradient(top, from(#2AA5FC), to(#2594E2));
+    background: -moz-linear-gradient(top, from(#2AA5FC), to(#2594E2));
+    background: -ms-linear-gradient(top, from(#2AA5FC), to(#2594E2));
+    background: -o-linear-gradient(top, from(#2AA5FC), to(#2594E2));
+}
+
+/* Hover */
+.special .paymentsummary-subwidget:hover label {
+    background-color: #2891DE;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2891DE), to(#2483C6));
+    background: -webkit-linear-gradient(top, from(#2891DE), to(#2483C6));
+    background: -moz-linear-gradient(top, from(#2891DE), to(#2483C6));
+    background: -ms-linear-gradient(top, from(#2891DE), to(#2483C6));
+    background: -o-linear-gradient(top, from(#2891DE), to(#2483C6));
+}
+
+/* Focus */
+.special .paymentsummary-subwidget.focus label {
+    border-radius: 16px;
+    background: #2aa5fc;
+    border-color: #c8c8c8;
+}
+
+/* Checked */
+.special .paymentsummary-subwidget.checked label {
+    color: #ffffff;
+    background: #2891DE;
+    border-color: #2aa5fc;
+}
+
+/* Answered */
+.special .yesnoselect-widget.answered label {
+    background: #2891DE;
+}

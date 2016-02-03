@@ -1,0 +1,343 @@
+.quote-section {
+    position: relative;
+    background: #fff;
+}
+
+.quote-section-legend {
+    width: 568px;
+    margin: auto;
+    text-align: center;
+}
+.quote-section-label {
+    padding: 50px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.quote-section-label h2 {
+    font-family: "Merriweather";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 100px;
+}
+.quote-section-label .label-promo {
+    display: block;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: italic;
+    color: #2aa5fc;
+    letter-spacing: 1px;
+}
+
+.pill-button {
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px 15px 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 13px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.pill-button.selected {
+    border-color: #2aa5fc;
+    color: #2aa5fc;
+}
+
+.quote-section-summary {
+    padding: 50px 50px 0;
+}
+.quote-section-summary .quote-amount {
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+}
+.quote-section-summary .includes-taxes {
+    color: inherit;
+    font-size: 13px;
+    text-decoration: underline;
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+
+.action-button {
+    color: inherit;
+    display: inline-block;
+    border: 1px solid #eaeaea;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    width: 150px;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+.action-button.primary {
+    border-color: transparent;
+    background: -webkit-linear-gradient(top, rgba(42,164,252,1) 0%, rgba(38,148,226,1) 100%);
+    color: #fff;
+}
+.quote-section-summary .action-button {
+    margin: 32px 8px 0;
+}
+
+/* Drivers & Vehicles */
+.quote-subsection {
+    width: 960px;
+    margin: 120px auto 0;
+    clear: both;
+    overflow: hidden;
+}
+.quote-subsection-label {
+    font-family: "Merriweather";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+.quote-subsection-details {
+    width: 1140px;
+    overflow: hidden;
+}
+.quote-fieldset {
+    padding: 50px 90px 0;
+    width: 388px;
+    float: left;
+    border-left: 1px solid #eaeaea;
+    position: relative;
+    left: -90px;
+}
+.quote-fieldset-label-index {
+    color: #2aa5fc;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.quote-fieldset-label {
+    font-size: 26px;
+    font-weight: 600;
+}
+.quote-fieldset-wide {
+    padding: 50px 90px 0;
+    width: 958px;
+    float: left;
+    border-left: 1px solid #eaeaea;
+    position: relative;
+    left: -90px;
+}
+.pill-button.pill-button-plus {
+    margin:0 auto;
+    display:block;
+    position: relative;
+    width:95px;
+    background:#405E7C;
+    border:none;
+    color:white;
+}
+.pill-button.pill-button-plus .plus-symbol {
+    display: block;
+    position: absolute;
+    background: transparent;
+    top:50%;
+    margin-top:-10px;
+    right:10px;
+    margin-left:-10px;
+}
+.quote-field {
+    position:relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+}
+.quote-field.taller {
+    height:40px;
+}
+.quote-field.quote-field-pillbox {
+    /*padding-top:10px;
+    margin-top:34px;*/
+}
+    .quote-field.quote-field-pillbox .quote-field-pillbox-linedetail {
+        display: block;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height:5px;
+        width:34px;
+        border-top:1px solid #eaeaea;
+    }
+    .quote-field-label {
+        width:45%;
+        float:left;
+    }
+    .quote-field-label p {
+        opacity:0.4;
+        font-size:11px;
+        line-height:34px;
+        margin:0px;
+    }
+    .quote-field.quote-field-pillbox .quote-field-label p {
+        opacity:1;
+        font-weight: 800;
+        font-size:15px;
+    }
+    .quote-field-content {
+        /*font-size:14px;*/
+        width:55%;
+        float:left;
+    }
+    .quote-field.quote-field-pillbox .quote-field-content .pill-button {
+        width:70px;
+        float:right;
+        text-align:center;
+        margin:9px 0px;
+        color:#2d2d30;
+    }
+    .quote-field-content .select-arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        margin-top: -10px;
+        opacity:0.2;
+    }
+    .quote-field-drop-select {
+        display: block;
+        height:34px;
+        line-height:34px;
+        float:left;
+        margin:0px;
+        border-bottom:1px solid #D6D6D6;
+        width:100%;
+    }
+    .quote-field-drop-select p {
+        font-size:14px;
+        margin:0px;
+        line-height: 34px;
+    }
+    .quote-field-drop-detail {
+        display: block;
+        height:34px;
+        line-height:34px;
+        opacity:0.4;
+        font-size:10px;
+        text-align: right;
+        float:right;
+    }
+    .quote-field-yesno {
+        float: left;
+        font-size: 18px;
+        display: block;
+        margin: 0px;
+        line-height: 30px;
+        width: 100px;
+        text-align: center;
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+    }
+    .quote-field-yesno:last-child {
+        float:right;
+    }
+    .quote-field-yesno label {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        padding: 3px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #eaeaea;
+        border-radius: 4px;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.13);
+        -webkit-transition: 100ms linear;
+        cursor: pointer;
+    }
+    .quote-field-yesno.active label {
+        color:#2AA5FC;
+        border-color:#2AA5FC;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+
+
+/* Why Progressive & Additional Excesses */
+.quote-info-panel {
+    float: left;
+    position: relative;
+    left: -90px;
+}
+.quote-info-panel-label {
+    color: #2aa5fc;
+    font-size: 36px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 90px;
+    border-bottom: 1px solid #eaeaea;
+}
+.quote-info-panel-details {
+    padding: 50px 90px 0;
+    width: 388px;
+    float: left;
+    border-left: 1px solid #eaeaea;
+    position: relative;
+}
+.quote-reason {
+    width: 280px;
+    margin: auto;
+    text-align: center;
+}
+.quote-reason h4 {
+    font-family: "Merriweather";
+    font-size: 20px;
+}
+.quote-reason h4:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: -40px auto 20px;
+    border-radius: 50%;
+    background: #2aa5fc url(../../img/quote-info-why-discounts.png) center;
+}
+.quote-reason p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.quote-excess {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding-right: 120px;
+    position: relative;
+}
+.quote-excess-amount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.4;
+    font-weight: 700;
+}
+.quote-excess-note {
+    font-size: 14px;
+    opacity: 0.4;
+    margin-top: 40px;
+}
+.quote-info-panel-label:before {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 0 auto -10px;
+    border: 2px solid #eaeaea;
+    border-radius: 50%;
+}
+#quote-info-why .quote-info-panel-label:before {
+    background: url(../../img/quote-info-why.png) center;
+}
+#quote-info-excesses .quote-info-panel-label:before {
+    background: url(../../img/quote-info-excesses.png) center;
+}
+
+/* Quote CTA */
+.quote-cta {
+    padding: 80px 0;
+    text-align: center;
+}

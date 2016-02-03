@@ -1,0 +1,34 @@
+.disabled {
+    pointer-events: none;
+}
+
+.section.disabled .section-callout {
+    opacity: 0;
+}
+.section.disabled .section-label {
+    opacity: 0.3;
+}
+
+.fieldset.disabled {
+    position: absolute;
+}
+/*
+.fieldset.disabled .fieldset-label {
+    opacity: 0.2;
+}
+*/
+
+.field.disabled {
+    position: absolute;
+    background: #fafafa;
+    /* Nice?
+    background: #fbfbfb -webkit-linear-gradient(top, #fbfbfb 0%, #f6f6f6 100%);
+    */
+}
+.field.disabled .field-label, .field.disabled .field-extra {
+    opacity: 0.2;
+}
+
+.widget.disabled {
+    opacity: 0.2;
+}

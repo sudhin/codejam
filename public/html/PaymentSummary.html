@@ -1,0 +1,27 @@
+<div class="widget paymentsummary-widget <%=style%>">
+    <div class="paymentsummary-ledgerrow">
+        <span>$131.51*</span>
+        <p>Monthly Payment Amount</p>
+    </div>
+    <div class="paymentsummary-ledgerrow">
+        <span class="sad">$1,631.51*</span>
+        <p>Total Policy Cost</p>
+    </div>
+    <div class="paymentsummary-ledgerrow-duetoday">
+        <span>$226.21*</span>
+        <p>Due Today</p>
+        <p class="legalese">*Taxes included. <a href="#">View Installment Schedule</a> or <a href="#">View Breakdown</a>.</p>
+    </div>
+    <span class="subwidget">
+        <input name="name" value="">
+    </span>
+
+    <% for (var i = 0; i < choices.length; i++) { %>
+        <span class="subwidget paymentsummary-subwidget <% if(width){%><%=width%><% } else { %> onethird  <% }%>">
+            <input class="input paymentsummary-input" id="id-<%=name%>-<%=i%>" name="<%=name%>" type="radio" value="<%=choices[i]%>" tabindex="0"/>
+            <label for="id-<%=name%>-<%=i%>">
+                <%=choices[i]%>
+            </label>
+        </span>
+    <% } %>
+</div>

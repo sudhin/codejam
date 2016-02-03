@@ -1,0 +1,10 @@
+<div class="widget yesnoselect-widget <%=style%>">
+<% for (var i = 0; i < choices.length; i++) { %>
+    <span class="subwidget yesno-subwidget <% if(width){%><%=width%><% } else { %> onethird  <% }%>">
+        <input class="input yesno-input" id="id-<%=name%>-<%=i%>" name="<%=name%>" type="radio" value="<%=choices[i]%>" tabindex="0"/>
+        <label for="id-<%=name%>-<%=i%>">
+            <%=choices[i]%>
+        </label>
+    </span>
+<% } %>
+</div>

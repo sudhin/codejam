@@ -1,0 +1,8 @@
+body {
+    padding-top: 132px;
+}
+#main {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}

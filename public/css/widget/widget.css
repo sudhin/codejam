@@ -1,0 +1,25 @@
+
+.widget,
+.subwidget {
+    float: left;
+    font-size: 18px;
+    margin-left: 20px;
+    width: 484px;
+    position: relative;
+}
+.widget {
+    margin-top: 15px;
+}
+.widget.onethird,
+.subwidget.onethird {
+    width: 148px;
+}
+.widget.onehalf,
+.subwidget.onehalf {
+    width: 232px;
+}
+.widget.twothirds,
+.subwidget.twothirds {
+    width: 316px;
+}
+

@@ -1,0 +1,76 @@
+/* Section */
+.section.answered:first-child {
+}
+.section.answered .section-legend {
+    opacity: 0;
+    height: 0px;
+}
+/*
+.section.answered:first-child .section-legend {
+    height: 50px;
+}
+*/
+.section.answered .section-legend {
+    pointer-events: none;
+}
+.section.answered .section-background {
+    background: #fff;
+}
+.section.answered .section-callout {
+}
+
+/* Subsection */
+.subsection.answered .subsection-legend {
+    height: auto;
+    opacity: 1;
+}
+
+/* Fieldset */
+.fieldset.answered {
+    margin-top: 0px;
+}
+.fieldset.answered .fieldset-label {
+    top: 0;
+    font-size: 18px;
+    border-color: #d6d6d6;
+    border-width: 1px 0 0;
+    padding-top: 20px;
+    opacity: 1 !important;
+    z-index: 1;
+}
+.fieldset.answered .fieldset-details {
+    width: 840px;
+    background: #fbfbfb;
+    -webkit-transform: none;
+    margin-top: 0px;
+}
+.fieldset.answered .field {
+    background: #fbfbfb;
+    border: 0px solid transparent;
+    border-image: none;
+    padding-top: 0;
+}
+.fieldset.answered .field:first-child {
+    border-top: 1px solid #e6e6e6;
+    border-image: none;
+    padding-top: 48px;
+}
+.fieldset.answered:first-child .field:first-child {
+    border-top-width: 0;
+}
+
+/* Widget */
+.fieldset.answered .radioselect-widget {
+    margin-top: 0;
+}
+
+/* Last answered */
+.subsection.last-answered .subsection-label {
+    border-bottom: 1px solid #d6d6d6;
+}
+.subsection.last-answered .fieldset:first-child .fieldset-label {
+    border-top-color: transparent;
+}
+.subsection.last-answered.collapsed .subsection-summary {
+    border-bottom-color: #e6e6e6;
+}

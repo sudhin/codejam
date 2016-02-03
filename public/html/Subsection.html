@@ -1,0 +1,30 @@
+<div class="subsection">
+    <div class="subsection-legend">
+        <div class="subsection-label">
+            <span class="label-name"><%=label%></span>
+            <span class="label-number">
+                <span class="label-numerator"><%=labelNumber%></span>
+                <span class="label-of">/</span>
+                <span class="label-denominator"></span>
+            </span>
+        </div>
+        <div class="subsection-summary">
+<%
+    var html = summary;
+    for (var fragment in fragments) {
+        var index = fragments[fragment];
+        var span = '<span class="summary-fragment" data-index="{I}">{F}</span>';
+        span = span.replace("{I}", index).replace("{F}", fragment);
+        html = html.replace(fragment, span);
+    }
+%>
+            <%=html%>
+            <a class="subsection-edit" href="#"></a>
+        </div>
+    </div>
+    <div class="subsection-details">
+        <% for (var i = 0; i < fieldsets.length; i++) { %>
+            <%=fieldsets[i]%>
+        <% } %>
+    </div>
+</div>

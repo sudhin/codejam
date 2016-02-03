@@ -1,0 +1,24 @@
+/* Finished */
+
+.section.finished .section-background {
+    height: 100%;
+}
+.section.finished .section-callout {
+    margin-top: -225px;
+}
+
+.subsection.finished .subsection-legend {
+    pointer-events: initial;
+}
+.subsection.finished .subsection-edit {
+    display: block;
+}
+.subsection.finished .subsection-details {
+    overflow: hidden;
+    -webkit-transition: height 1s cubic-bezier(0.2, 1.0, 0.2, 1.0);
+}
+.subsection.finished .fieldset.answered {
+    -webkit-transition: opacity 0.4s linear;
+}
+
+

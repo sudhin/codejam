@@ -1,0 +1,9 @@
+.hidden {
+    display: none !important;
+    opacity: 0 !important;
+    -webkit-transform: translateY(50px) !important;
+}
+.revealed {
+    display: block !important;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.2, 1.0, 0.2, 1.0), opacity 0.4s linear !important;
+}

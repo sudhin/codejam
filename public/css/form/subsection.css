@@ -1,0 +1,82 @@
+.subsection {
+}
+.subsection-legend {
+    height: 0px;
+    position: relative;
+    line-height: 98px;
+    font-size: 24px;
+    opacity: 0;
+    pointer-events: none;
+    /*
+    -webkit-transition: opacity 5000ms linear;
+    */
+}
+.subsection-label {
+    position: absolute;
+    width: 190px;
+    font-weight: 300;
+    border-top: 1px solid #d6d6d6;
+}
+.subsection-label .label-of,
+.subsection-label .label-denominator {
+    display: none;
+}
+.subsection-summary {
+    height: 98px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 220px;
+    padding-left: 40px;
+    background: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid transparent;
+    /*
+    -webkit-transition: border-color 400ms linear;
+    */
+}
+.subsection-edit {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -12px;
+    height: 24px;
+    width: 34px;
+    padding: 0 12px;
+    line-height: 24px;
+    background-color: #405e7c;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 12px;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transition: 200ms;
+}
+.subsection-edit:before,
+.subsection-edit:after {
+    content: "Done";
+    display: block;
+    position: absolute;
+    right: 5px;
+    padding-right: 11px;
+    opacity: 1;
+}
+.subsection-edit:before {
+    content: "Edit";
+    padding-right: 19px;
+    background-image: url(../../img/edit.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 0;
+}
+.subsection-summary:hover .subsection-edit {
+    color: #fff !important;
+    width: 34px !important;
+}
+.subsection-details {
+    /*
+    position: relative;
+    -webkit-transition: 1200ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    */
+}
+

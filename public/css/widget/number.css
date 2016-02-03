@@ -1,0 +1,94 @@
+.number-widget {
+    position: relative;
+    -webkit-user-select: none;
+}
+.number-widget-increase,
+.number-widget-decrease {
+    display: block;
+    width: 44px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 1px;
+}
+.number-widget-increase,
+.number-widget-decrease {
+    fill: #999;
+    -webkit-transition: background 100ms linear;
+    transition: background 100ms linear;
+}
+.number-widget-increase:hover svg,
+.number-widget-decrease:hover svg {
+    fill: #2aa5fc;
+}
+.number-widget-increase:hover {
+    background-color: #fafafa;
+    border-left: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    border-radius: 0 4px 4px 0;
+}
+.number-widget-decrease:hover {
+    background-color: #fafafa;
+    border-right: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    border-radius: 4px 0 0 4px;
+}
+.number-widget-increase {
+    right: 0;
+}
+.number-widget-decrease {
+    left: 0;
+}
+.number-widget-plus,
+.number-widget-minus {
+    background: transparent;
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+.number-widget input {
+    color: rgba(42, 43, 47, 1.0);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.13);
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 4px;
+    padding: 13px 20px 12px;
+    text-align: center;
+    display: block;
+    -webkit-transition: 100ms linear;
+    transition: 100ms linear;
+    pointer-events: none;
+}
+.number-widget:hover input {
+    color: #2aa5fc;
+}
+.number-widget:hover input::-webkit-input-placeholder {
+    color: #2aa5fc;
+}
+.number-widget:hover input:-ms-input-placeholder {
+    color: #2aa5fc;
+}
+.number-widget:hover input::-moz-placeholder {
+    color: #2aa5fc;
+}
+
+/* Focus */
+.number-widget.focus input {
+    border-color: #c8c8c8;
+    border-radius: 16px;
+    background-color: #fafafa !important;
+}
+.number-widget.focus .number-widget-increase {
+    border-radius: 0 16px 16px 0;
+}
+.number-widget.focus .number-widget-decrease {
+    border-radius: 16px 0 0 16px;
+}

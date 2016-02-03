@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400">
+        <link rel="stylesheet" href="css/site/defaults.css" />
+        <link rel="stylesheet" href="css/site/nav.css" />
+        <link rel="stylesheet" href="css/site/loader.css" />
+        <link rel="stylesheet" href="css/site/site.css" />
+        <link rel="stylesheet" href="css/form/section.css" />
+        <link rel="stylesheet" href="css/form/subsection.css" />
+        <link rel="stylesheet" href="css/form/fieldset.css" />
+        <link rel="stylesheet" href="css/form/field.css" />
+        <link rel="stylesheet" href="css/quote/quote.css" />
+        <link rel="stylesheet" href="css/end/theend.css" />
+        <link rel="stylesheet" href="css/widget/widget.css" />
+        <link rel="stylesheet" href="css/widget/radio.css" />
+        <link rel="stylesheet" href="css/widget/yesno.css" />
+        <link rel="stylesheet" href="css/widget/select.css" />
+        <link rel="stylesheet" href="css/widget/text.css" />
+        <link rel="stylesheet" href="css/widget/number.css" />
+        <link rel="stylesheet" href="css/widget/creditcard.css" />
+        <link rel="stylesheet" href="css/widget/legalese.css" />
+        <link rel="stylesheet" href="css/widget/checkbox.css" />
+        <link rel="stylesheet" href="css/widget/paymentsummary.css" />
+        <link rel="stylesheet" href="css/state/fixed.css" />
+        <link rel="stylesheet" href="css/state/revealed.css" />
+        <link rel="stylesheet" href="css/state/disabled.css" />
+        <link rel="stylesheet" href="css/state/answered.css" />
+        <link rel="stylesheet" href="css/state/finished.css" />
+        <link rel="stylesheet" href="css/state/collapsed.css" />
+        <link rel="stylesheet" href="css/media/width-wide.css" media="(min-width:1800px)" />
+        <link rel="stylesheet" href="css/media/height-med.css" media="(min-height:840px)" />
+        <link rel="stylesheet" href="css/media/height-tall.css" media="(min-height:1160px)" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/third-party/debounce.js"></script>
+        <script src="js/third-party/easing.js"></script>
+        <script src="js/third-party/tmpl.js"></script>
+        <script src="js/template/template.js"></script>
+        <script src="js/template/renderable.js"></script>
+        <script src="js/template/section-vehicles.js"></script>
+        <script src="js/template/section-drivers.js"></script>
+        <script src="js/template/section-quote.js"></script>
+        <script src="js/template/section-policydetails.js"></script>
+        <script src="js/template/section-confirm.js"></script>
+        <script src="js/template/section-theend.js"></script>
+        <script src="js/form/component.js"></script>
+        <script src="js/form/form.js"></script>
+        <script src="js/form/section.js"></script>
+        <script src="js/form/subsection.js"></script>
+        <script src="js/form/fieldset.js"></script>
+        <script src="js/form/field.js"></script>
+        <script src="js/form/widget.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/site.js"></script>
+    </head>
+    <body>
+      <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '511744679031515',
+          xfbml      : true,
+          version    : 'v2.5',
+          'secret'  : '3e2a1fbca126d07faba52a2ac912a5c1',
+
+        });
+
+         FB.login(function(){
+              FB.api('/me', {fields: 'last_name'}, function(response) {
+              console.log(response);
+              
+            });
+         });
+        
+        // ADD ADDITIONAL FACEBOOK CODE HERE
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+        <div id="nav">
+            <div id="nav-top">
+                <a id="nav-logo" href="#"></a>
+                <a id="nav-save" href="#">Save quote</a>
+                <a id="nav-chat" href="#">Chat &amp; FAQ</a>
+            </div>
+            <div id="nav-progress">
+                <div id="nav-progress-links">
+                    <a href="#" class="section-current">Vehicles</a>
+                    <a href="#">Drivers</a>
+                    <a href="#">Quote</a>
+                    <a href="#">Policy Details</a>
+                    <a href="#">Confirm</a>
+                    <div id="nav-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="main"></div>
+        <div id="screen"></div>
+        <div id="loaderbackground">
+            <div id="loader">
+                <div id="loader-image"></div>
+            </div>
+        </div>
+
+        <script>
+            var site = new Site();
+            Template.load(function() {
+                site.init();
+            });
+        </script>
+    </body>
+</html>

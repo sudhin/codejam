@@ -1,0 +1,27 @@
+/*
+.section-background {
+    height: 325px;
+}
+.section-legend {
+    height: 250px;
+}
+*/
+
+/*
+.section-label {
+    font-size: 65px;
+    top: 50px;
+    -webkit-transition: -webkit-transform 750ms cubic-bezier(0.2, 1.0, 0.2, 1.0);
+}
+.section.disabled .section-label {
+    -webkit-transform: translateY(50px);
+}
+.section-callout {
+    height: 300px;
+    margin-top: 150px;
+}
+
+.fieldset-details {
+    -webkit-transform: translateY(100px);
+}
+*/

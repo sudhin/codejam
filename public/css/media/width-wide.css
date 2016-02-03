@@ -1,0 +1,31 @@
+/* Max width on section callout 
+.section-callout {
+    left: 50%;
+    margin-left: -1000px;
+}
+
+/* Adjust to left for better optical centering 
+#nav-top,
+#nav-progress-links,
+.section-legend,
+.section-details {
+    left: -50px;
+}
+.section-callout {
+    margin-right: -480px;
+}
+
+/* Stop centering altogether? */
+/*
+#nav-top,
+#nav-progress-links,
+.section-legend,
+.section-details {
+    margin-left: 350px;
+}
+
+.section-callout {
+    width: 1410px;
+}
+*/
+

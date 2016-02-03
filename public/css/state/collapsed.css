@@ -1,0 +1,23 @@
+/* Collapsed */
+
+.subsection.collapsed .subsection-edit {
+    background-color: #2aa5fc;
+    color: transparent;
+    width: 0;
+}
+.subsection.collapsed .subsection-edit:before {
+    opacity: 1;
+}
+.subsection.collapsed .subsection-edit:after {
+    opacity: 0;
+}
+.subsection.collapsed .subsection-details {
+    height: 0px !important;
+}
+.subsection.collapsed .fieldset.answered {
+    opacity: 0;
+    /*
+    -webkit-transform: translateY(20px);
+    */
+}
+
